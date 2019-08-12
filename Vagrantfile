@@ -72,5 +72,6 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", path: "./scripts/install-java8.sh"
   config.vm.provision "shell", path: "./scripts/install-code.sh"
   config.vm.provision "shell", path: "./scripts/install-docker.sh"
+  config.vm.provision "shell", path: "./scripts/install-influxdb-docker.sh"
 
 end
