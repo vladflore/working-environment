@@ -1,7 +1,8 @@
 #!/bin/bash
 
 echo ============ Install InfluxDB ============
-sudo docker run --name influxdb -p 9999:9999 quay.io/influxdb/influxdb:2.0.0-alpha
+# sudo docker run --name influxdb -p 9999:9999 quay.io/influxdb/influxdb:2.0.0-alpha
+sudo docker pull influxdb
 echo ============ Done ============
 echo Go to localhost:9999 and set up the influxdb: https://v2.docs.influxdata.com/v2.0/get-started/#set-up-influxdb
 
